@@ -15,7 +15,7 @@ import {
 
 const Weather = function ({ weather, searchCity }) {
   return (
-    <div className="mx-auto max-w-screen-md mt-4 py-20 px-32 bg-gradient-to-br from-cyan-700 to-blue-700 h-fit shadow-xl shadow-gray-400">
+    <div className="mx-auto max-w-screen-md mt-4 py-20 px-32 bg-gradient-to-br from-cyan-700 to-blue-700 shadow-2xl">
       <TopButton />
       <Inputs searchCity={searchCity} />
 
@@ -23,7 +23,6 @@ const Weather = function ({ weather, searchCity }) {
       <TemperatureAndDetails tempAndDetails={formatTempAndDetails(weather)} />
 
       <Forecast title="hourly forecast" forecast={formatForecast(weather)} />
-      {/* <Forecast title="daily forecast" /> */}
     </div>
   );
 };
